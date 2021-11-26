@@ -1,2 +1,2 @@
 # dotfiles
-# contain all dot files/configurations that i use --> currently using openbox.
+# contain all dot files/configurations that thats being uses.
