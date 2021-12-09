@@ -1,2 +1,2 @@
 # dotfiles
-# contain all dot files/configurations that thats being uses.
+# current conf --> openbox with tint2
