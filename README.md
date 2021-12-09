@@ -1,2 +1,2 @@
 # dotfiles
-# current conf --> openbox with tint2
+current conf --> openbox with tint2
