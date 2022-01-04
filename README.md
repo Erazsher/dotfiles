@@ -1,2 +1,2 @@
 # dotfiles
-current conf --> openbox with tint2
+current collection as of jan 2021
