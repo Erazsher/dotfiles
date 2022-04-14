@@ -1,0 +1,24 @@
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd -c ~/.config/sxhkd/sxhkdrc ;\
+	herbe "sxhkd has been restarted"
+
+# script 1
+super + shift + b
+	~/.scripts/bluetooth.sh
+
+# script 2
+super + shift + w
+	~/.scripts/wifi.sh
+
+# terminal
+super + Return
+	$TERMINAL
+
+# browser
+super + w
+	firefox
+
+
+
+
