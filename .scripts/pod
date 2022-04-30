@@ -1,0 +1,2 @@
+#!/bin/sh
+echo ~/.newsboat/queue | entr -p dash ~/.scripts/queuenotify  #2>/dev/null 
