@@ -1,4 +1,4 @@
-   all my config
+   config
   -------------------
    past and  present.
 
