@@ -1,0 +1,28 @@
+#!/bin/sh
+#script to show crypto rate
+curl rate.sx/$1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

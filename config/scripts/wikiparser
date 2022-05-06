@@ -1,0 +1,29 @@
+#!/bin/bash
+
+
+if [ $# -ne 1 ]; then
+  echo "Usage: $(basename $0) 'word '"
+  exit 1
+if
+
+curl=$(which curl)
+outfile="output.txt"
+word=$(echo $1)
+url="https://en.wikipedia.org/wiki/$word"
+echo $url
+
+curl -o "output.txt" $url
+
+function strip_html(){
+    grep "<p>" $outfile | sed 's/<[^>]*>//g' > temp.txt && cp temp.txt $outfile
+}
+
+function res(){
+    echo "Answer"
+    while read result; do
+        echo "${result}"
+    done < $outfile
+}
+
+strip_html
+res
