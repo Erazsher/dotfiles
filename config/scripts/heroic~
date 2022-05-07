@@ -1,7 +1,0 @@
-#!/bin/sh
-
-herbe "Starting heroic launcher"
-cd ~appimages
-
-
-

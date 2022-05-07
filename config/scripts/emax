@@ -1,2 +1,0 @@
-#!/bin/sh
- killall emacs && emacs --daemon &&  emacsclient  -nc

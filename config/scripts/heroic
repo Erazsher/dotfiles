@@ -1,6 +1,0 @@
-#!/bin/sh
-
-herbe "Starting heroic launcher"
-cd ~/appimages && ./Heroic-2.2.6.AppImage &
-
-

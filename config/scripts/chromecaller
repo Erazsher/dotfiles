@@ -1,8 +1,0 @@
-#!/bin/sh
-
-herbe "starting ungoogled-chromium"
-dash ~/appimages/chromium
-
-
-
-
