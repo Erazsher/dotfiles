@@ -42,6 +42,15 @@ super + k
 alt + shift + e
       	dash ~/.scripts/dmenuunicode
 
+# script 7 passmenu
+alt + ctrl + p
+	bash /home/sanal/.scripts/passmenu
+
+#script 8 recn
+alt + ctrl + r
+	dash /usr/local/bin/recn
+ctrl + alt + r
+	killall ffmpeg
 # terminal
 alt + Return
 	$TERMINAL
@@ -51,8 +60,8 @@ super + w
 	firefox
 
 #emacs-WIP
-alt + e
-	dash /home/sanal/.script/emax
+#alt + e
+#	dash /home/sanal/.script/emax
 
 
 
