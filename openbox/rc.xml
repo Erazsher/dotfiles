@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>Arc-Dark</name>
-    <titleLayout>NLIMC</titleLayout>
+    <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -224,12 +224,12 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-r">
+    <keybind key="W-p">
       <action name="Execute">
         <command>dmenu_run </command>
       </action>
     </keybind>
-    <keybind key="W-b">
+    <keybind key="W-w">
       <action key="Execute">
         <command>firefox</command>
       </action>
@@ -246,22 +246,22 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-F1">
+    <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-F2">
+    <keybind key="W-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-F3">
+    <keybind key="W-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-F4">
+    <keybind key="W-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
@@ -278,7 +278,7 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="W-r">
+    <keybind key="W-Return">
       <action name="rofi -show run">
         <menu>rofi-menu</menu>
       </action>
@@ -332,6 +332,24 @@
     <keybind key="W-S-Down">
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
+      </action>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width client="yes">1/2</width>
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width client="yes">1/2</width>
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
@@ -705,13 +723,50 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
+	  
+       
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
   # you may use one or more of the name/class/role/title/type rules to specify
   # windows to match
 
-  <application name="the window's _OB_APP_NAME property (see obxprop)"
+  <
+hook-0 = ~/.config/polybar/scripts/sound.sh
+hook-1 = ~/.config/polybar/scripts/sound.sh up
+hook-2 = ~/.config/polybar/scripts/sound.sh down
+hook-3 = ~/.config/polybar/scripts/sound.sh mute
+hook-4 = sleep 1 && ~/.config/polybar/scripts/sound.sh
+hook-0 = ~/.config/polybar/scripts/sound.sh
+hook-1 = ~/.config/polybar/scripts/sound.sh up
+hook-2 = ~/.config/polybar/scripts/sound.sh down
+hook-3 = ~/.config/polybar/scripts/sound.sh mute
+hook-4 = sleep 1 && ~/.config/polybar/scripts/sound.sh
+hook-0 = ~/.config/polybar/scripts/sound.sh
+hook-1 = ~/.config/polybar/scripts/sound.sh up
+hook-2 = ~/.config/polybar/scripts/sound.sh down
+hook-3 = ~/.config/polybar/scripts/sound.sh mute
+hook-4 = sleep 1 && ~/.config/polybar/scripts/sound.sh
+hook-0 = ~/.config/polybar/scripts/sound.sh
+hook-1 = ~/.config/polybar/scripts/sound.sh up
+hook-2 = ~/.config/polybar/scripts/sound.sh down
+hook-3 = ~/.config/polybar/scripts/sound.sh mute
+hook-4 = sleep 1 && ~/.config/polybar/scripts/sound.sh
+hook-0 = ~/.config/polybar/scripts/sound.sh
+hook-1 = ~/.config/polybar/scripts/sound.sh up
+hook-2 = ~/.config/polybar/scripts/sound.sh down
+hook-3 = ~/.config/polybar/scripts/sound.sh mute
+hook-4 = sleep 1 && ~/.config/polybar/scripts/sound.sh
+hook-0 = ~/.config/polybar/scripts/sound.sh
+hook-1 = ~/.config/polybar/scripts/sound.sh up
+hook-2 = ~/.config/polybar/scripts/sound.sh down
+hook-3 = ~/.config/polybar/scripts/sound.sh mute
+hook-4 = sleep 1 && ~/.config/polybar/scripts/sound.sh
+hook-0 = ~/.config/polybar/scripts/sound.sh
+hook-1 = ~/.config/polybar/scripts/sound.sh up
+hook-2 = ~/.config/polybar/scripts/sound.sh down
+hook-3 = ~/.config/polybar/scripts/sound.sh mute
+hook-4 = sleep 1 && ~/.config/polybar/scripts/sound.shapplication name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"
           groupname="the window's _OB_APP_GROUP_NAME property (see obxprop)"
          groupclass="the window's _OB_APP_GROUP_CLASS property (see obxprop)"
@@ -798,6 +853,10 @@
   </application>
 
   # end of the example
--->
+    -->
+  <application class="*"> 
+<maximized>true</maximized>
+  </application>
   </applications>
+
 </openbox_config>
