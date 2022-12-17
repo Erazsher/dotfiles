@@ -1,0 +1,6 @@
+#!/bin/sh
+#shell script to take screen shots uses import from image magick.
+name="$(date +%H%M%S)"
+import -window root /home/sanal/pics/screenshots/$name.png
+
+

@@ -1,0 +1,34 @@
+#!/bin/sh
+if [ $# = 0 ]; then
+    herbe "Pass the program name"
+else
+   MAN=$1
+   man -t $MAN| ps2pdf - - | zathura - 
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

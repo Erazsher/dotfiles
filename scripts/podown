@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Downloads podcasts in newsboat queue file
+save_directory="$HOME/.newsboat/pods/"
+queue_file="$HOME/.newsboat/queue"
+
+while read -r LINE; do
+    [ -z "$LINE" ] && continue
+    url="$(echo "$LINE" | awk '{print $1}')"
+    name="$(basename "$(echo "$LINE" | awk '{$1=""; print $0}')")"
+    id_num="$(tsp wget -O ""$save_directory"/$name" "$url")"
+    notify-send "'$name' enqueued."
+    tsp -D "$id_num" herbe "'$name' downloaded"
+done < "$queue_file"
+
+echo > "$queue_file"

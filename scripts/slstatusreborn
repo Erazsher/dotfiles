@@ -1,0 +1,3 @@
+#!/bin/sh
+pkill slstatus & slstatus & herbe "slstatus has been reloaded"
+ 

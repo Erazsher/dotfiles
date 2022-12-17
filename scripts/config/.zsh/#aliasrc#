@@ -1,0 +1,39 @@
+
+export EDITOR=nvim
+###################
+#ALIASES
+###################
+alias sudo="doas"
+alias vim="nvim"
+alias vi="nvim"
+alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
+alias mn="dash ~/.scripts/cheatsh"
+alias mans="dash ~/.scripts/mansplain "
+Ccalias unix="dash ~/.scripts/unix"
+alias mno="mpv --no-audio "
+alias yayr="dash ~/.scripts/auryay.sh"
+alias yclass="dash ~/.scripts/class_music.sh"
+alias classy="dash ~/.scripts/classy_music.sh"
+alias yhip="dash ~/.scripts/hip_mus.sh"
+alias hoppy="dash ~/.scripts/hopit.sh"
+alias nb="newsboat -r"
+alias ysynth="dash ~/.scripts/Synth_mus.sh"
+alias ufetch="dash ~/.scripts/ufetch"
+alias flutter="bash ~/gitworks/flutter/bin/flutter"
+alias wmw="curl https://wttr.in/malappuram"
+#####################
+#GIT
+#####################
+alias gp="git push"
+alias ga="git add"
+alias gc="git commit -m "$1""
+
+
+
+
+
+
+
+
+
+

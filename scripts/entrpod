@@ -1,0 +1,12 @@
+#!/bin/sh
+
+wget --input-file=/home/sanal/.newsboat/queue -P /home/sanal/.newsboat/pods/
+
+herbe "podcast downloaded"  & rm /home/sanal/.newsboat/queue
+
+
+
+
+
+
+
