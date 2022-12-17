@@ -22,7 +22,7 @@ APIKEY=""
 ###     Configuration Options     ###
 #####################################
 # Where should the Wallpapers be stored?
-LOCATION=/home/sanal/pics/wall
+LOCATION=#addlocation
 # How many Wallpapers should be downloaded, should be multiples of the
 # value in the THUMBS Variable
 WPNUMBER=48
